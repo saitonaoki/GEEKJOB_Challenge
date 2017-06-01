@@ -31,9 +31,9 @@ public class Output extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
-        request.setCharacterEncoding("UTF-8"); //日本語入力
+        request.setCharacterEncoding("UTF-8"); //日本語入力対応させる
         
-        // Input.htmlから
+        // Input.htmlから受け取る
         String name = request.getParameter("textname"); // requestで呼び出し
         String rd = request.getParameter("rdSex");
         String hobby = request.getParameter("txtHobby");
